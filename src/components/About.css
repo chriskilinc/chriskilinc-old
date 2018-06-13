@@ -1,0 +1,43 @@
+
+.about{
+  height:90vh;
+  display: flex;
+  
+}
+
+.about--container{
+  text-align: start;
+  width:100vw;
+  margin: 10vh 20vw;
+  padding: 2vw;
+  background: #fdfaf6; /* Old browsers */
+  background: -moz-linear-gradient(top, #fdfaf6 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fdfaf6 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fdfaf6 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfaf6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.about--container p{
+  padding: 0.9vw;
+}
+
+.spacer{
+  /* Navigation Height */
+  padding-top: var(--navHeight);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .about--container{
+    margin: 10vh 7.5vw;
+  }
+  .about--container p{
+    padding: 2.5vw 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .about--container p{
+    padding: 5vw 2.5vw;
+  }
+}

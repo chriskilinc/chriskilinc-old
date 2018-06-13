@@ -1,0 +1,83 @@
+:root{
+  --colorLinnen: hsl(30,66.7%,98%);
+  --colorCosyGrey: hsl(0,0%,10%);
+  --colorGrey: hsl(0,0%,29.5%);
+  --colorLightGrey:hsl(0,0%,89.8%);
+}
+
+a,p,h1,h2,h3,h4,h5,h6,li{
+  text-decoration: none;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;  
+}
+a,p{
+  
+}
+.fa, .fas,.far,.fab {
+  padding-right: 20px;
+}
+
+.application{
+  text-align: center;
+  color: var(--colorCosyGrey);
+}
+
+.hero{
+
+}
+.hero--icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.icon{
+  height:325px;
+}
+
+.hero--content{
+  /* padding-top: 100px;  */
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.hero--content h1{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+.quote{
+  font-size: 0.9rem;
+  color: var(--colorgrey);
+  /* font-weight: 700; */
+  margin: 0;
+  text-indent: 1.5rem;
+}
+.flex-break-row{
+  width:100%;
+}
+.hero--nav{
+  height: 20vh;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+}
+.hero--nav a{
+  color: #222222;
+  font-size: 16px;
+  padding: 2.5px 5px;
+  margin: 0;
+  transition: 0.1s ease-out;
+  border-bottom: 2px solid transparent;
+}
+.hero--nav a:hover{
+  color:#424242;
+  border-color: #323232;
+}
+
+.hero--nav--container{
+  padding-top: 15vh;
+}
