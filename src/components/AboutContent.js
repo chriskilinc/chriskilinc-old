@@ -6,22 +6,15 @@ class AboutContent extends Component {
       <div className="about--container">
         <h1>Hello!</h1>
         <p>
-          I am a social and outgoing person with a great interest in technology
-          and how things work.
+        I'm Christopher and I tend to be very social and outgoing. With great interest in technology, 
+        my days are mostly programming and doing creative things. 
         </p>
+        <p>In my free time I play music, experiment with IOT tech as well as even more programming.</p>
         <p>
-          I want to surround myself with kind, focused and inspirational people
-          who burn for what they do.
-        </p>
-        <p>
-          I am currently working as an consultant Software Developer at{' '}
+          I am currently working as an consultant Software Developer at {''}
           <b>If P&C Insurance</b> by assignment of <b>Sigma AB.</b>
         </p>
-        <p>
-          In my free time I enjoy playing music, exercising, learning Game
-          Development as well as experimenting with IoT solutions such as
-          Raspberry Pi, z-wave and OpenHab.
-        </p>
+        
       </div>
     );
   }
