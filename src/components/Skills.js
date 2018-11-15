@@ -14,9 +14,9 @@ class Skills extends Component {
                   <i className="fas fa-code" />JavaScript
                 </h2>
                 <div className="skills--col--content">
-                  <p>ReactJs</p>
-                  <p>NodeJs</p>
-                  <p>p5.js</p>
+                  <p>React</p>
+                  <p>Node</p>
+                  <p>Knockout</p>
                 </div>
               </div>
               <div className="skills--col">
@@ -35,17 +35,18 @@ class Skills extends Component {
                 </h2>
                 <div className="skills--col--content">
                   <p>HTML5</p>
-                  <p>CSS / SCSS ( BEM )</p>
+                  <p>Css / Scss / Less</p>
                 </div>
               </div>
               <div className="skills--col">
                 <h2>
-                  <i className="fas fa-database" />Databases
+                  <i className="fas fa-database" />Infrastructure
                 </h2>
                 <div className="skills--col--content">
+                  <p>Azure / DevOps</p>
+                  <p>MongoDB / CosmosDB</p>
                   <p>MSSQL</p>
-                  <p>MongoDB</p>
-                  <p>Azure Blob / Table</p>
+                  <p>Docker</p>
                 </div>
               </div>
               <div className="skills--col">
@@ -55,8 +56,9 @@ class Skills extends Component {
                 <div className="skills--col--content">
                   <p>Git</p>
                   <p>WordPress</p>
-                  <p>MailChimp</p>
+                  <p>MailChimp / SendGrid</p>
                   <p>Google Analytics</p>
+                  <p>Splunk</p>
                 </div>
               </div>
               <div className="skills--col">
@@ -65,7 +67,7 @@ class Skills extends Component {
                 </h2>
                 <div className="skills--col--content">
                   <p>Visual Studio / Code</p>
-                  <p>Unity Engine</p>
+                  <p>Fiddler</p>
                   <p>Photoshop</p>
                   <p>Blender</p>
                   <p>Fruity Loops Studio</p>
