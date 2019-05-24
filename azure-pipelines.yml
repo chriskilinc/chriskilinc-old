@@ -24,7 +24,7 @@ steps:
   displayName: 'docker login'
   inputs:
     command: login
-    containerRegistry: dockerRegistryServiceConnection
+    containerRegistry: $(dockerRegistryServiceConnection)
 
 - script: docker push $(containerRegistryEndpoint)/$(imageName)
   displayName: 'docker push'
