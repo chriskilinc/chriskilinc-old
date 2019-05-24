@@ -29,8 +29,8 @@ steps:
 - script: docker push $(containerRegistryEndpoint)/$(imageName)
   displayName: 'docker push'
 
-  - script: docker rmi $(imageName)
+- script: docker rmi $(imageName)
   displayName: 'docker remove image $(imageName)'
 
-  - script: docker images
+- script: docker images
   displayName: 'docker images'
