@@ -9,13 +9,28 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+variables: 
+  app: 'chriskilinc'
+  imageName: '$(app):$(build.buildId)'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+steps:
+- script: docker build -t $(imageName) .
+  displayName: 'docker build  $(imageName)'
+
+- script: docker tag $(imageName) $(containerRegistryEndpoint)/$(imageName)
+  displayName: 'docker tag'
+
+- task: Docker@2
+  displayName: 'docker login'
+  inputs:
+    command: login
+    containerRegistry: dockerRegistryServiceConnection
+
+- script: docker push $(containerRegistryEndpoint)/$(imageName)
+  displayName: 'docker push'
+
+  - script: docker rmi $(imageName)
+  displayName: 'docker remove image $(imageName)'
+
+  - script: docker images
+  displayName: 'docker images'
